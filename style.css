@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+header {
+    background-image: linear-gradient(90deg,#8c52ff,#1bdaff);
+    text-align: center;
+    font-size: 30px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffff;
+    min-width: 300px;
+}
+
+.contenedor {
+    background-color: #798ef5;
+    width: 98%;
+    max-width: 1800px;
+    min-width: 300px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    padding-bottom: 50px;
+}
+button{
+    cursor: pointer;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    height: 45px;
+}
+
+.botones button{
+    background-color: #fff;
+    border: 0;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 18px;
+}
+
+#anadir:hover{
+    background-color: rgb(13, 153, 0) ;
+    color: white;
+}
+
+.botones #filtro{
+    margin-left: 10px;
+}
+#filtro:hover{
+    background-color: rgb(0, 162, 255);
+    color: white;
+}
+
+#reiniciar{
+    margin-left: 10px;
+}
+#reiniciar:hover{
+    background-color: #7130e2;
+    color: white;
+}
+
+.tareas{
+    margin-top: 30px;
+}
+
+.tarea {
+    margin-top: 15px;
+    background-color: #FFF;
+    border-radius: 0 100px 100px 0px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    min-width: 350px;
+    font-size: 25px;
+    box-shadow: 0px 0px 20px rgb(6, 77, 242);
+    padding-right: 50px;
+}
+
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.check{
+    margin-top:5px;
+    
+}
+
+
+.check .material-symbols-outlined {
+  font-size: 52px;
+  cursor: pointer;
+}
+
+.check .on{
+    color: rgb(13, 198, 13);
+}
+
+.check .off{
+    color: rgb(0, 136, 199);
+}
+
+
+
+
+.eliminar{
+    margin-left: auto;
+}
+.eliminar button:hover{
+    background-color: #ababab;
+}
+.eliminar button{
+    background-color: rgb(240, 240, 240);
+    border: 0;
+    border-radius: 5px;
+}
+.eliminar .material-symbols-outlined{
+    font-size: 40px;
+    color: red;
+}
+
+.content{
+    margin-left: 50px;
+}
+
+.filtroContent{
+    position: relative;
+    display: inline-block;
+}
+
+#desplegar{
+    position: absolute;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    top: 100%;
+    left: 0;
+    box-shadow: 0px 0px 10px gray;
+    display: none;
+}
+
+#desplegar button:hover{
+    background-color: #33a1d8;
+    color: white;
+}
+
+
+.noHay{
+    font-size: 50px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+
+.check label input{
+    display: none;
+}
+
+.check label .on {
+    display: none;
+}
+
+.check label input:checked ~ .on{
+    display: inline;
+}
+.check label input:checked ~ .off{
+    display: none;
+}
+.on:hover{
+    color: rgb(2, 115, 83);
+}
+.off:hover{
+    color: rgb(0, 38, 255);
+}
+
+@media (max-width: 390px) {
+    .tarea{
+        font-size: 18px;
+    }
+    .eliminar .material-symbols-outlined{
+        font-size: 30px;
+    }
+    .check .material-symbols-outlined {
+        font-size: 30px;
+    }
+
+}
